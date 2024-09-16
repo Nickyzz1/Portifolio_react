@@ -1,0 +1,23 @@
+ul { 
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+.formatation {
+    color: inherit;
+    text-decoration: none;
+    color: #ff5757;
+}
+.formatation:hover{
+    text-shadow: 1px 1px 14px rgba(255, 255, 255, 0.518);
+}
+
+.menu {
+    display: flex;
+    direction: rtl;
+    padding: 10px;
+    margin-right: 20px;
+}
