@@ -7,7 +7,6 @@ function App() {
   return (
     <>
     <Navbar/>
-    <main>
 
     <div className={style.container} id="home">
             
@@ -45,9 +44,110 @@ function App() {
                 </nav>
             </section>
         </div>
-  </main>
-    </>
+
+        
+        <div className={style.box} id="habilidades">
+            
+            <section className={style.content}>
+                
+                <h1 className = {style.titles}>Habilidades</h1>
+                
+                <div className={style.galery}>
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+                        <figcaption>SQL</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                        <figcaption>MySQL</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                        <figcaption>Java</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                        <figcaption>C</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                        <figcaption>Python</figcaption>
+                    </figure>
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" />
+                        <figcaption>SQL Server</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000" alt=""/>
+                        <figcaption>Power BI</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://img.icons8.com/?size=100&id=13654&format=png&color=000000" alt=""/>
+                        <figcaption>Excel</figcaption>
+                    </figure>
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={`${style.skills} ${style.fadeIn}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                </div>                
+            
+            </section>
+            
+        </div>
+        
+        <div className={style.box} id="formação">
+            
+            <section className={style.content}>
+                
+                <h1 className={style.titles}>Formação acadêmica Experiencias de trabalho</h1>
+                
+                <div className={style.imgAcademic}>
+                    <figure>
+                        <img className={style.academic} src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Bras%C3%A3o_PUCPR.png" alt=""/>
+                        <figcaption>Graduando Analise e desenvolvimento de sitemas na PUCPR</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={style.academic} src="https://www.researchgate.net/publication/366596809/figure/fig3/AS:11431281109572098@1672096855548/A-PUCPR-possui-63-cursos-de-graduacao-16-programas-de-pos-graduacao-Stricto-Sensu.png" alt=""/>
+                        <figcaption>Pontifácia Universidade Católica do Paraná</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img className={style.academic} src="https://www.provida.net/wp-content/uploads/2021/01/Thumb_350x245_Curitiba.jpg" alt=""/>
+                        <figcaption>2º semestre de técnico em Desenvolvimento de Sistemas</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        
+                        <img className={style.academic} src="https://www.institucionalpositivo.com.br/wp-content/uploads/2020/08/Agua_verde_fachada-1024x683.jpg" alt=""/>
+                        <figcaption>Experiencia em web design - Positivo</figcaption>
+                        
+                    </figure>
+                    
+                    <figure>
+                        <img className={style.academic} src="https://i.pinimg.com/736x/08/04/a8/0804a8c521ff5459d3ea3c06a0bcdc0c.jpg" alt=""/>
+                        <figcaption>Engeenering Technical School - Bosch</figcaption>
+                    </figure>
+                </div>
+                
+            </section>
+            
+        </div>
+        
+
+  </>
   )
 }
 
-export default App
+export default App;
