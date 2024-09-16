@@ -145,6 +145,51 @@ function App() {
             
         </div>
         
+        <div className={style.box} id="projetos"/>
+            
+            <h1 className={style.titles} >Agora aos Projetos!</h1>
+
+                <h2 className={style.projetoTitle} >Batery Hero!</h2>
+
+                <div className={style.projeto} >
+                    
+                    <img className={style.imgs_projeto}   src="https://i.pinimg.com/736x/b2/11/b3/b211b3654f254100fc8a0d90ef72089c.jpg" alt=""/>
+                    
+                    <img className={style.imgs_projeto} src="https://i.pinimg.com/736x/c1/dc/a0/c1dca0bf683343d1a722919a820e8a4a.jpg" alt=""/>
+                    
+                    <img className={style.imgs_projeto} src="https://i.pinimg.com/736x/be/3a/b5/be3ab5668555676213687be03e29237a.jpg" alt=""/>
+                    
+                </div>
+                
+                <p className={style.paragraph} >Um projeto feito com integração de IoT, web, firebase e banco de dados, realizado na Bosch Curitiba. A ideia do projero é uma bateria elétrica construída do zero com prototipagem IoT utilizando o microcontrolador ESP32 para fazer a comunicação dos sinais sensoriais e web. Tecnologias usadas: Thonny, VS Code, IoT, JavaScript, css, html, firebase, sql server </p>
+
+                <a href="https://github.com/sasa2754/Drums_Hero">Link Github</a>
+                
+            <div/>
+
+            <h2 className={style.projetoTitle} >Bomber Boy!</h2>
+
+                <div className={style.projeto}>
+                    
+                    <img  style={{width:'20%', borderRadius: '9px'}}
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu80lxT-Q8VIGF0pphfHsSSs8cjAU8wjFNYQ&s" alt=""/>
+                
+                </div>
+                
+                <p  className={style.paragraph}  >Inspirado no Bomberman, projeto final do 1º semestre de Analise e Desenvolvimento de Sistemas no Senai foi chamado de Bomber Boye foi completamente programado em C e construido em 7 dias. </p>
+
+                <a href="https://github.com/wallacin07/ProjetoFinalC">Link github</a>
+                
+            <div/>
+
+            {/* <h2  >Robótica: Lego MindStorms</h2> */}
+
+            {/* <div className="video-gallery">
+                <video autoplay muted loop style="display: flex; width: 10%; border-radius: 9px; box-shadow: 0 0 13px rgba(255, 255, 255, 0.8);" src="assets/img/WhatsApp Video 2024-08-09 at 10.01.44.mp4" alt=""></video>
+                <video autoplay muted loop style="display: flex; width: 10%; border-radius: 9px; box-shadow: 0 0 13px rgba(255, 255, 255, 0.8);" src="assets/img/WhatsApp Video 2024-08-09 at 10.01.52.mp4" alt=""></video>
+            </div> */}
+        
+    <div/>
 
   </>
   )
