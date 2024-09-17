@@ -11,6 +11,7 @@
   --white: rgb(255, 255, 255);
   --bs-button: 0 0 3px var(--red);
   --br : 10px;
+  --bord:  2px solid rgba(255, 0, 0, 0.5);
   color: var(--white);
   background-color: black;
 }
@@ -117,17 +118,22 @@
 }
 
 .contacts {
-  display: contents;
-  direction: rtl;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 14px;
+}
+
+.zipzop {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
 }
 
 .button{
 
-  border: 2px solid rgba(255, 0, 0, 0.5); 
+  border: var(--bord);
   background: rgba(0, 0, 255, 0.0); 
   border-radius: 70px;
   padding: 14px;
@@ -135,7 +141,9 @@
   margin-top: 0px;
   color: var(--red-soft);
   transition: 1.1ms;
+  width: 147px;
 }
+
 .button:hover{
   color:  var(--red);
   transform: scale(1.06);
@@ -257,7 +265,9 @@
 
   .paragraph
   {
-    margin: 20%;
+    margin: 13%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
   .projetoTitle
   {
@@ -275,7 +285,7 @@
 .card{
   border: solid 1px var(--white);
   border-radius: var(--br);
-  padding: 10px;
+  padding: 15px;
   box-shadow: var(--bs-soft);
 }
 
@@ -293,6 +303,13 @@
       align-items: center;
       width: 100%;
       gap: 20px;
+  }
+
+  .icones {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
   }
   
       
@@ -471,6 +488,7 @@
   }
   .myDescription
   {
+    direction: rtl;
     padding: 5%;
   }
 
@@ -482,9 +500,6 @@
     width: 40px;
   }
 
-  .academic {
-    width: 60px;
-  }
 
   .button {
     width: 100%;
@@ -493,8 +508,51 @@
   .academic {
    display: grid;
 
+   .paragraph
+   {
+     margin: 13%;
+     margin-left: 15%;
+     margin-right: 15%;
+   }
+
 }
 
+}
+
+@media(max-width: 773px)
+{
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .myDescription{
+      margin-left: 15%;
+      margin-right: 15%;
+      border: solid 1px var(--white);
+      border-radius: var(--br);
+      padding: 20px;
+      box-shadow: var(--bs-soft);
+    }
+    .icones {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 5px;
+    }
+    .contacts{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 14px;
+        flex-direction: column;
+    }
 }
 
 

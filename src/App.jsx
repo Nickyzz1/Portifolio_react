@@ -1,8 +1,25 @@
 import style from './App.module.css'
+import { useState } from 'react'
 import { Navbar } from './components/Navbar'
 
 
 function App() {
+
+    const defaultPhoneNumber = '5541997744814'
+    const [message, setmessage] = useState('')
+  
+    const handleChange = (e) => {
+      const {value} = e.target;
+      setmessage(value);
+    }
+  
+    const handleWhatsAppMessage = () => {
+      
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${defaultPhoneNumber}&text=
+      Mensagem:%20${message}`;
+  
+      window.open(whatsappUrl, '_blank');
+    }
 
   return (
     <>
@@ -19,28 +36,37 @@ function App() {
             <section className ={style.helloWorld}>
                 
                 <section>
-                    <div>
+                    <div className={style.titulo}>
                         <h1 className={style.typeWriting}>HI, i'm <span>Nicolle</span></h1>
                         <h2 className={style.typeWriting2}>i'm a <span>Developer</span></h2>
                     </div>
                 </section>
                 
-                <p className={style.myDescription} >Hello world! Eu me chamo Nicolle, tenho 18 anos e tenho + de 1 ano de experiência no mundo digital. Sou apaixonada pela minha área de atuação e atualmente, minha principal área de desenvolvimento é Front-end. Até aqui minha trajeytória foi marcada por projetos desafiadores e aqui abaixo você poderá encontrar alguns deles! <br/>Faça uma boa viagem </p>
+                <p className={style.myDescription} >Hello world! Eu me chamo Nicolle, tenho 18 anos e tenho + de 1 ano de experiência no mundo digital. Sou apaixonada pela minha área de atuação e atualmente, minha principal área de desenvolvimento é Front-end. Até aqui minha trajeytória foi marcada por projetos desafiadores e aqui abaixo você poderá encontrar alguns deles! <br/>Faça uma boa viagem! </p>
                 
-                <nav className={style.contacts}>
-                    <ul>
+                <nav>
+                    <ul className={style.contacts}>
+                        <div className={style.icones}>
+                            <a href="https://www.instagram.com/nicollerodriguessiqueira?igsh=MXhwYThta2ExNmV0Mw==" target="_blank">
+                                <img className={style.icon}name="instagram" src="https://img.icons8.com/?size=100&id=85154&format=png&color=000000 " alt=""/>  
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/nicolle-rodrigues-siqueira-198113260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><img  className={style.icon} name="linkedin" src="https://img.icons8.com/?size=100&id=60443&format=png&color=000000" alt="" /></a>
+                            
+                            <a href="https://github.com/Nickyzz1/" target="_blank"><img  className={style.icon} name="github" src="https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=000000" alt=""/></a>
+                            
+                            <a href="https://wa.me/qr/EXZNCADDRD6SF1" target="_blank"><img  className={style.icon} name="whatsapp" src="https://img.icons8.com/?size=100&id=16466&format=png&color=000000" alt=""/></a>
+                        </div>
+                        <div className={style.zipzop}>
+                            <button type="submit" onClick={handleWhatsAppMessage}  className={style.button}> <a href="https://wa.me/qr/EXZNCADDRD6SF1" target="_blank">Me contate</a></button>
+
+                            <textarea className={style.message} id='message' name='message' value={message} onChange={handleChange} required style={{width:'100%'}}></textarea>
+                        </div>
+
                         
-                        <a href="https://www.instagram.com/nicollerodriguessiqueira?igsh=MXhwYThta2ExNmV0Mw==" target="_blank">
-                            <img className={style.icon}name="instagram" src="https://img.icons8.com/?size=100&id=85154&format=png&color=000000 " alt=""/>  
-                        </a>
                         
-                        <a href="https://www.linkedin.com/in/nicolle-rodrigues-siqueira-198113260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><img  className={style.icon} name="linkedin" src="https://img.icons8.com/?size=100&id=60443&format=png&color=000000" alt="" /></a>
                         
-                        <a href="https://github.com/Nickyzz1/" target="_blank"><img  className={style.icon} name="github" src="https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=000000" alt=""/></a>
-                        
-                        <a href="https://wa.me/qr/EXZNCADDRD6SF1" target="_blank"><img  className={style.icon} name="whatsapp" src="https://img.icons8.com/?size=100&id=16466&format=png&color=000000" alt=""/></a>
-                        
-                        <button type="submit"  className={style.button}> <a href="https://wa.me/qr/EXZNCADDRD6SF1" target="_blank">Me contate</a></button>
+     
                         
                     </ul>
                 </nav>

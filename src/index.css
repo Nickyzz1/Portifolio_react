@@ -8,8 +8,10 @@
   --bs-soft: 0 0 3px #FFFFFF;
   --red:  #db3c3c;
   --red-soft: #ff5757;
+  --bord:  2px solid rgba(255, 0, 0, 0.5);
   --white: rgb(255, 255, 255);
   --bs-button: 0 0 3px var(--red);
+  --black: #000000;
    color: var(--white);
 }
 
@@ -37,6 +39,28 @@ figcaption {
   word-wrap: break-word; 
 }
 
+textarea {
+  border-radius: 30px;
+  border: var(--bord);
+  background-color: var(--black);
+  color: white;
+  padding: 10px; 
+  box-sizing: border-box; 
+  resize: vertical; 
+  direction: ltr;
+  text-align: left;
+  height: auto;
+  resize: vertical; 
+  min-width: 180px;
+  max-height: 50px;
+  overflow: hidden;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none; 
+}
+
 a{
   color: var(--red-soft);
   text-decoration: none;
@@ -62,6 +86,12 @@ main{
     main{
         display: flex;
         flex-direction: column;
+    }
+    .titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
     
 }
