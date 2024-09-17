@@ -10,7 +10,9 @@
   --red-soft: #ff5757;
   --white: rgb(255, 255, 255);
   --bs-button: 0 0 3px var(--red);
-   color: var(--white);
+  --br : 10px;
+  color: var(--white);
+  background-color: black;
 }
 
 *{
@@ -28,11 +30,7 @@
 .helloWorld {
   padding-left: 10%;
 }
-img {
-  border-radius: 500%;
-  width: 200px;
-  background-color: var(--white);
-}
+
 
 .icon{
 
@@ -59,12 +57,6 @@ img {
   );
   transform: scale(1.08);
   box-shadow: var(--bs-soft);
-}
-
-
-
-span {
-  color: var(--red);
 }
 
 .typeWriting, .typeWriting2 {
@@ -150,10 +142,6 @@ span {
   box-shadow: var(--bs-button);
 }
 
-a{
-  color: var(--red-soft);
-  text-decoration: none;
-}
 
 .skills{
 
@@ -192,7 +180,7 @@ a{
   
   .academic:hover{
       transform: scale(1.1);
-      box-shadow: 0 0 13px rgba(255, 255, 255, 0.8);
+      box-shadow: var(--bs)
   }
   
   .hability
@@ -266,26 +254,6 @@ a{
       object-fit: cover; 
   }
   
-  
-  figure {
-      margin: 0;
-      text-align: center; 
-      width: 120px; 
-      display: inline-block; 
-  }
-  
-  figcaption {
-      font-size: 12px; 
-      color: #ccc; 
-      margin-top: 5px;
-      word-wrap: break-word; 
-  }
-  
-  /* .perfil
-  {
-      border-radius: 1000px;
-     
-  } */
 
   .paragraph
   {
@@ -304,6 +272,13 @@ a{
 
   }
   
+.card{
+  border: solid 1px var(--white);
+  border-radius: var(--br);
+  padding: 10px;
+  box-shadow: var(--bs-soft);
+}
+
   .imgs_projeto img{
       box-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
   }
@@ -436,5 +411,93 @@ a{
   height: 100%;
   z-index: -1; 
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 5%;
+  }
+
+  .helloWorld {
+    padding-left: 5%;
+  }
+
+  .typeWriting {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .typeWriting2 {
+    font-size: 20px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+
+  .skills {
+    width: 50px;
+  }
+
+  .academic {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 3%;
+  }
+  .perfil
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .helloWorld {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .myDescription
+  {
+    padding: 5%;
+  }
+
+  .typeWriting, .typeWriting2 {
+    font-size: 20px;
+  }
+
+  .skills {
+    width: 40px;
+  }
+
+  .academic {
+    width: 60px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+  .academic {
+   display: grid;
+
+}
+
+}
+
+
+
 
 

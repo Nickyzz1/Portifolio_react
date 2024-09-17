@@ -8,9 +8,11 @@ function App() {
     <>
     <Navbar/>
 
+    <main>
+
     <div className={style.container} id="home">
             
-            <div>
+            <div className={style.perfil}>
                 <img src="https://i.pinimg.com/736x/d0/be/1b/d0be1b4391541895548d827ef558e550.jpg" alt=""/>
             </div>
             
@@ -23,7 +25,7 @@ function App() {
                     </div>
                 </section>
                 
-                <p>Hello world! Eu me chamo Nicolle, tenho 18 anos e tenho + de 1 ano de experiência no mundo digital. Sou apaixonada pela minha área de atuação e atualmente, minha principal área de desenvolvimento é Front-end. Até aqui minha trajeytória foi marcada por projetos desafiadores e aqui abaixo você poderá encontrar alguns deles! <br/>Faça uma boa viagem </p>
+                <p className={style.myDescription} >Hello world! Eu me chamo Nicolle, tenho 18 anos e tenho + de 1 ano de experiência no mundo digital. Sou apaixonada pela minha área de atuação e atualmente, minha principal área de desenvolvimento é Front-end. Até aqui minha trajeytória foi marcada por projetos desafiadores e aqui abaixo você poderá encontrar alguns deles! <br/>Faça uma boa viagem </p>
                 
                 <nav className={style.contacts}>
                     <ul>
@@ -110,7 +112,7 @@ function App() {
             
             <section className={style.content}>
                 
-                <h1 className={style.titles}>Formação acadêmica Experiencias de trabalho</h1>
+                <h1 className={style.titles}>Formação acadêmica & Experiencias de trabalho</h1>
                 
                 <div className={style.imgAcademic}>
                     <figure>
@@ -161,9 +163,9 @@ function App() {
                     
                 </div>
                 
-                <p className={style.paragraph} >Um projeto feito com integração de IoT, web, firebase e banco de dados, realizado na Bosch Curitiba. A ideia do projero é uma bateria elétrica construída do zero com prototipagem IoT utilizando o microcontrolador ESP32 para fazer a comunicação dos sinais sensoriais e web. Tecnologias usadas: Thonny, VS Code, IoT, JavaScript, css, html, firebase, sql server </p>
+                <p className={`${style.paragraph} ${style.card}`}  >Um projeto feito com integração de IoT, web, firebase e banco de dados, realizado na Bosch Curitiba. A ideia do projero é uma bateria elétrica construída do zero com prototipagem IoT utilizando o microcontrolador ESP32 para fazer a comunicação dos sinais sensoriais e web. <br/>Tecnologias usadas: Thonny, VS Code, IoT, JavaScript, css, html, firebase, sql server. <br/> <a className={style.github} href="https://github.com/sasa2754/Drums_Hero">Link Github</a> </p>
 
-                <a href="https://github.com/sasa2754/Drums_Hero">Link Github</a>
+                
                 
             <div/>
 
@@ -176,10 +178,8 @@ function App() {
                 
                 </div>
                 
-                <p  className={style.paragraph}  >Inspirado no Bomberman, projeto final do 1º semestre de Analise e Desenvolvimento de Sistemas no Senai foi chamado de Bomber Boye foi completamente programado em C e construido em 7 dias. </p>
+                <p className={`${style.paragraph} ${style.card}`} >Inspirado no Bomberman, projeto final do 1º semestre de Analise e Desenvolvimento de Sistemas no Senai foi chamado de Bomber Boye foi completamente programado em C e construido em 7 dias. <br />  <a href="https://github.com/wallacin07/ProjetoFinalC">Link github</a> </p>
 
-                <a href="https://github.com/wallacin07/ProjetoFinalC">Link github</a>
-                
             <div/>
 
             {/* <h2  >Robótica: Lego MindStorms</h2> */}
@@ -190,7 +190,7 @@ function App() {
             </div> */}
         
     <div/>
-
+    </main>
   </>
   )
 }

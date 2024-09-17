@@ -1,13 +1,17 @@
-ul { 
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+:root{
     --bs: 1px 1px 14px rgba(255, 255, 255, 0.518);
     --bs-soft: 0 0 3px #FFFFFF;
     --red:  #db3c3c;
     --red-soft: #ff5757;
     --white: rgb(255, 255, 255);
+}
+
+ul { 
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+
 }
 
 
@@ -22,7 +26,17 @@ ul {
 
 .menu {
     display: flex;
-    direction: rtl;
+    justify-content: center;
+    flex-wrap: wrap; 
     padding: 10px;
     margin-right: 20px;
+    justify-content: space-between; 
+}
+
+@media(max-width: 390px)
+{
+    .menu{
+        scale: 0.8;
+    }
+    
 }

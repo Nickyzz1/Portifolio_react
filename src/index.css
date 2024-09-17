@@ -1,11 +1,16 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+:root
+{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  box-sizing: border-box;
-  --black: #000000;
-  background-color:  var(--black)
-
+  --bs:1px 1px 14px rgba(255, 255, 255, 0.518);
+  --bs-soft: 0 0 3px #FFFFFF;
+  --red:  #db3c3c;
+  --red-soft: #ff5757;
+  --white: rgb(255, 255, 255);
+  --bs-button: 0 0 3px var(--red);
+   color: var(--white);
 }
 
 *{
@@ -16,4 +21,47 @@
 p{
   margin-top: 13px;
   color: white;
+}
+
+figure {
+  margin: 0;
+  text-align: center; 
+  width: 120px; 
+  display: inline-block; 
+}
+
+figcaption {
+  font-size: 12px; 
+  color: #ccc; 
+  margin-top: 5px;
+  word-wrap: break-word; 
+}
+
+a{
+  color: var(--red-soft);
+  text-decoration: none;
+}
+
+img {
+  border-radius: 500%;
+  width: 200px;
+  background-color: var(--white);
+}
+
+span {
+  color: var(--red);
+}
+
+main{
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 390px)
+{
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
