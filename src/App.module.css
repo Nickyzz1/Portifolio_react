@@ -260,14 +260,13 @@
       height: 100px; 
       border-radius: 50%; 
       object-fit: cover; 
+     margin: 10%;
   }
   
 
   .paragraph
   {
-    margin: 13%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 10%;
   }
   .projetoTitle
   {
@@ -500,6 +499,9 @@
     width: 40px;
   }
 
+  .academic {
+    width: 60px;
+  }
 
   .button {
     width: 100%;
@@ -507,13 +509,6 @@
   }
   .academic {
    display: grid;
-
-   .paragraph
-   {
-     margin: 13%;
-     margin-left: 15%;
-     margin-right: 15%;
-   }
 
 }
 
@@ -536,7 +531,7 @@
       margin-right: 15%;
       border: solid 1px var(--white);
       border-radius: var(--br);
-      padding: 20px;
+      padding: 10px;
       box-shadow: var(--bs-soft);
     }
     .icones {
