@@ -199,7 +199,7 @@ function App() {
 
                 <div className={style.projeto}>
                     
-                    <img  style={{width:'20%', borderRadius: '9px'}}
+                    <img  style={{borderRadius: '9px'}}
                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu80lxT-Q8VIGF0pphfHsSSs8cjAU8wjFNYQ&s" alt=""/>
                 
                 </div>

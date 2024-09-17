@@ -31,8 +31,6 @@ figure {
   align-items:center ;
   margin: 20px;
   text-align: center; 
-  width: 120px; 
-  display: inline-block; 
 }
 
 figcaption {
@@ -97,4 +95,11 @@ main{
       flex-direction: column;
     }
     
+}
+
+@media(min-width: 773px)
+{
+  figure {
+    width: 120px; 
+  }
 }

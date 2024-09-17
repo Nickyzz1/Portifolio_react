@@ -318,6 +318,7 @@
       justify-content: center;
       margin-top: 50px;
       margin-bottom: 99px;
+      text-align: center;
       /* animation: glowFade 20s forwards; */
       text-shadow: var(--bs)
   }
@@ -498,11 +499,6 @@
   .skills {
     width: 40px;
   }
-
-  .academic {
-    width: 60px;
-  }
-
   .button {
     width: 100%;
     text-align: center;
@@ -548,6 +544,18 @@
         margin-top: 14px;
         flex-direction: column;
     }
+
+}
+
+@media(min-width: 774px) {
+  .academic {
+    width: 60px;
+  }
+  .paragraph
+  {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 
 
